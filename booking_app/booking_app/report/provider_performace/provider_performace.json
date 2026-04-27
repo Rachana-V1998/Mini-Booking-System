@@ -1,0 +1,69 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [
+  {
+   "fieldname": "Provider",
+   "fieldtype": "Link",
+   "label": "section_break_gk6z",
+   "width": 0
+  },
+  {
+   "fieldname": "Total Booking",
+   "fieldtype": "Int",
+   "label": "total_booking",
+   "width": 0
+  },
+  {
+   "fieldname": "Avg Distance",
+   "fieldtype": "Float",
+   "label": "avg_distance",
+   "width": 0
+  },
+  {
+   "fieldname": "Avg Price",
+   "fieldtype": "Currency",
+   "label": "avg_price",
+   "width": 0
+  }
+ ],
+ "creation": "2026-04-27 14:43:22.578055",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-04-27 15:14:26.134651",
+ "modified_by": "Administrator",
+ "module": "booking_app",
+ "name": "Provider Performace",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    section_break_gk6z,\n    COUNT(name) AS total_booking,\n    AVG(distance) AS distance,\n    AVG(price) AS avg_price\nFROM `tabService Booking`\nWHERE status = \"completed\"\nGROUP BY section_break_gk6z\nORDER BY total_booking DESC;",
+ "ref_doctype": "Service Booking",
+ "report_name": "Provider Performace",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}
