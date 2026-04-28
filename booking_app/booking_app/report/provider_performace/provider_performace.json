@@ -6,6 +6,7 @@
    "fieldname": "Provider",
    "fieldtype": "Link",
    "label": "section_break_gk6z",
+   "options": "Service Booking",
    "width": 0
   },
   {
@@ -50,13 +51,13 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": null,
- "modified": "2026-04-27 15:14:26.134651",
+ "modified": "2026-04-27 16:30:43.939274",
  "modified_by": "Administrator",
  "module": "booking_app",
  "name": "Provider Performace",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "SELECT \n    section_break_gk6z,\n    COUNT(name) AS total_booking,\n    AVG(distance) AS distance,\n    AVG(price) AS avg_price\nFROM `tabService Booking`\nWHERE status = \"completed\"\nGROUP BY section_break_gk6z\nORDER BY total_booking DESC;",
+ "query": "SELECT \n    section_break_gk6z,\n    COUNT(name) AS total_booking,\n    AVG(distance) AS distance,\n    AVG(price) AS price\nFROM `tabService Booking`\nWHERE status = \"Completed\"\nGROUP BY section_break_gk6z\nORDER BY total_booking DESC;",
  "ref_doctype": "Service Booking",
  "report_name": "Provider Performace",
  "report_type": "Query Report",

@@ -6,14 +6,22 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_gk6z",
+  "column_break_4kor",
   "phone",
+  "section_break_zuap",
   "service_category",
+  "column_break_dolq",
   "status",
-  "distance",
-  "price",
+  "section_break_ij9g",
   "booking_time",
+  "column_break_jm6i",
+  "distance",
+  "section_break_hryh",
   "latitude",
-  "longitude"
+  "column_break_urfg",
+  "longitude",
+  "section_break_gkar",
+  "price"
  ],
  "fields": [
   {
@@ -62,12 +70,44 @@
    "fieldname": "longitude",
    "fieldtype": "Float",
    "label": "longitude"
+  },
+  {
+   "fieldname": "column_break_4kor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zuap",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dolq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ij9g",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jm6i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hryh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_urfg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gkar",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-27 13:08:41.403632",
+ "modified": "2026-04-27 15:38:46.256160",
  "modified_by": "Administrator",
  "module": "booking_app",
  "name": "Service Booking",

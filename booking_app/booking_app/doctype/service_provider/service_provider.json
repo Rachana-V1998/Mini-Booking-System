@@ -6,12 +6,19 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_tmgl",
-  "provider_type",
+  "column_break_iual",
   "phone",
+  "column_break_ktiy",
   "email",
+  "section_break_gdw4",
+  "provider_type",
+  "column_break_eybt",
   "rating",
+  "section_break_c2kp",
   "latitude",
+  "column_break_zafy",
   "longitude",
+  "section_break_phf5",
   "is_available"
  ],
  "fields": [
@@ -56,12 +63,40 @@
    "fieldname": "is_available",
    "fieldtype": "Check",
    "label": "Is available"
+  },
+  {
+   "fieldname": "column_break_iual",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_gdw4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ktiy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zafy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_phf5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_eybt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_c2kp",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-27 13:28:17.523895",
+ "modified": "2026-04-27 15:43:11.638182",
  "modified_by": "Administrator",
  "module": "booking_app",
  "name": "Service Provider",
